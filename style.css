@@ -1,0 +1,10 @@
+div {
+    display: flex;
+}
+
+.container{
+    background-image: url(/img/ground.jpg);
+    width: 1980px;
+    height: 980px;
+    border: solid 10px rgb(49, 40, 40);
+}
