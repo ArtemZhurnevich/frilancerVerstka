@@ -1,10 +1,117 @@
+/* ----------ОБНУЛЕНИЕ CSS----------------- */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------КОНЕЦ ОБНУЛЕНИЯ-------------*/
+
+
+
+h1{
+    font-size: 3em;
+}
 div {
-    display: flex;
+    /* display: flex; */
+}
+h2{
+    font-size: 25px;
+    margin: 15px;
+    
+}
+body{
+    background-image: url(img/ground.jpg);
+    /* width: ;
+    height: ; */
+}
+.container{
+    /* background-image: url(img/ground.jpg); */
+    padding: 10px;
+    max-width: 980px;
+    height: 1;
+    border: solid 3px rgb(49, 40, 40);
+    margin: 0% auto;
+}
+.options {
+    font-size: 23px;
+    color: blueviolet;
+}
+.firstansver {
+    font-size: 23px;
+    color: rgb(26, 202, 214);
+}
+.arial{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}
+.italic{
+    font-style: italic;
 }
 
-.container{
-    background-image: url(/img/ground.jpg);
-    width: 1980px;
-    height: 980px;
-    border: solid 10px rgb(49, 40, 40);
+.colorred{
+    color: rgb(255, 0, 0);
 }
+.textcenter{
+    text-align: center;
+}
+.decoration{
+    text-decoration:line-through;
+}
+/* .decorationnone{
+    text-decoration: none;
+} */
+
+.shadow{
+    text-shadow: 1px 3px 6px rgb(53, 51, 51);
+}
+
+.ident{
+    text-indent: 50px;
+}
+
+.leterspace{
+    letter-spacing: 1.5px;
+}
+
+.lineheight{
+    line-height: 25px;
+}
+
+.example-block{
+    border: solid 3px rgb(75, 48, 48);
+    /* padding работает только для блочных элементов */
+    padding: 25px; 
+    margin: 5px 0px;
+}
+

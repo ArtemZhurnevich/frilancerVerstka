@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курс по верстке</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Zhurnevich Artsem</h1>
+            <h1 class="shadow">Zhurnevich Artsem</h1>
             <nav>
                 <ul>
                     <li><a href="#Brieflyaboutyourself">Briefly about yourself</a></li>
@@ -44,25 +45,28 @@
                 </div>
 
                 <!-- input с типом checkbox обязательно болжен иметь значения name = '' разные -->
-                <p>Варианты ответа:</p>
-                <div>
-                    <p> <input tabindex="6" checked type="checkbox" name="1"> первый вариант ответа </p>
-                    <p> <input tabindex="7" type="checkbox" name="2"> второй вариант ответа</p>
-                    <p> <input tabindex="8" type="checkbox" name="3"> третий вариант ответа</p>
-                    <p> <input tabindex="9" type="checkbox" name="4"> четвертый вариант ответа</p>
+                <div class="example-block"> 
+                    <p >Варианты ответа:</p>
+                    <div class="options">
+                        <p class="firstansver"> <input tabindex="6" checked type="checkbox" name="1"> первый вариант ответа </p>
+                        <p> <input tabindex="7" type="checkbox" name="2"> второй вариант ответа</p>
+                        <p> <input tabindex="8" type="checkbox" name="3"> третий вариант ответа</p>
+                        <p> <input tabindex="9" type="checkbox" name="4"> четвертый вариант ответа</p>
+                    </div>
                 </div>
 
                 <div>
                     <input tabindex="10" type="file" name="foto">
                 </div>
 
-                <div>
-                    <textarea tabindex="11" name="" id="" cols="80"
-                        rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum expedita excepturi cupiditate distinctio nostrum maxime explicabo sunt consectetur. Impedit eveniet alias suscipit consequuntur corrupti blanditiis quibusdam excepturi maiores dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus, aspernatur accusamus aperiam praesentium esse quis fugiat nam. Eaque sint dignissimos natus impedit maxime minima aliquid, quisquam veritatis nihil voluptates.</textarea>
+                <div class="">
+                    <p class="">
+                        <textarea class="italic lineheight" tabindex="11" name="" id="" cols="80" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum expedita excepturi cupiditate distinctio nostrum maxime explicabo sunt consectetur. Impedit eveniet alias suscipit consequuntur corrupti blanditiis quibusdam excepturi maiores dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus, aspernatur accusamus aperiam praesentium esse quis fugiat nam. Eaque sint dignissimos natus impedit maxime minima aliquid, quisquam veritatis nihil voluptates.</textarea>
+                    </p>                    
                 </div>
 
                 <div>
-                    <select tabindex="12" name="color" id="">
+                    <select class="" tabindex="12" name="color" id="">
                         <option tabindex="13" value="1">первый</option>
                         <option tabindex="14" value="2">второй</option>
                         <option tabindex="15" value="3">третий</option>
@@ -78,13 +82,47 @@
 
             </form>
 
-            <h2 id="Brieflyaboutyourself">Briefly about yourself</h2>
-            <h2 id="SkillsandProficiency">Skills and Proficiency</h2>
-            <h2 id="CodeExamples">Code Examples</h2>
-            <h2 id="Courses">Courses</h2>
-            <h2 id="Languages">Languages</h2>
-            <h2 id="Projects">Projects</h2>
+            <h2 class="colorred" id="Brieflyaboutyourself">Briefly about yourself</h2>
+            <p class="arial textcenter ident leterspace" >My name is Artem, I am 32 years old. I live in a small town in the Republic of Belarus.
+                I got interested in web development half a year ago.
+                I read a couple of books, looked at a couple of sources on YouTube and realized that I like
+                it, it's
+                interesting, it makes the brain work well, which in turn is positive!
+                A month ago I learned about online courses at the RSS school.
+                It turned out to be a very cool platform for learning web development! I think that I will
+                succeed!)
+            </p>
 
+            <h2 class="colorred" id="SkillsandProficiency">Skills and Proficiency</h2>
+            <ul class="">
+                <li>VS Code, Adobe Photoshop</li>
+                <li>Git, GitHub</li>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript Basics</li>
+            </ul>
+
+            <h2 class="colorred" id="CodeExamples">Code Examples</h2>
+            <code class="">console.log( "Я начал изучать JavaScript!" );</code>
+
+
+            <h2 class="colorred" id="Courses">Courses</h2>
+            <ul>
+                <li class="decoration">You - tube;</li>
+                <li>HTML and CSS HTML-academy;</li>
+                <li>learnjavascript.ru;</li>
+                <li>RS Schools Course «JavaScript/Front-end». </li>
+            </ul>
+
+
+            <h2 class="colorred" id="Languages">Languages</h2>
+            <ol class="">
+                <li>English - A1</li>
+                <li>Russian - С1</li>
+                <li>Belarussian - B1</li>
+            </ol>
+
+            <h2 class="colorred" id="Projects">Projects</h2>
+            <a href="https://artemzhurnevich.github.io/rsschool-cv/">Мое CV</a> 
 
             <div>
                 <a target="_blank" href="https://www.google.com/">Google</a>
@@ -92,7 +130,6 @@
             <!-- <img src="img/ground.jpg" alt="упс"> -->
 
         </header>
-
 
         <footer>
 
