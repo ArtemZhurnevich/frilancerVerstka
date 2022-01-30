@@ -1,4 +1,4 @@
-/* ----------ОБНУЛЕНИЕ CSS----------------- */
+----------ОБНУЛЕНИЕ CSS-----------------
 *{
 	padding: 0;
 	margin: 0;
@@ -30,6 +30,7 @@ input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
+a {color: yellow;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -41,9 +42,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body{
     background-image: url(img/ground.jpg);
-
-    /* width: ;
-    height: ; */
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    
 }
 h1{
     font-size: 3em;
@@ -59,16 +62,74 @@ h2{
     
 }
 
+.list li{
+    font-size: 18px;
+    margin: 2px;
+    padding: 15px;
+    border-radius: 55px;
+}
+.list li:first-child {
+    color: rgb(189, 255, 6);
+    background-color: rgb(8, 164, 226);
+    font-weight: 500;
+
+}
+.list li:nth-child(2) {
+    color: rgb(6, 164, 255);
+    background-color: rgb(74, 131, 67);
+    font-weight: 500;
+
+}
+.list li:nth-child(3) {
+    color: rgb(6, 255, 6);
+    background-color: rgb(33, 226, 8);
+    font-weight: 500;
+
+}
+.list li:nth-child(4) {
+    color: rgb(6, 255, 19);
+    background-color: rgb(97, 50, 83);
+    font-weight: 500;
+
+}
+.list li:nth-child(5) {
+    color: rgb(139, 98, 30);
+    background-color: rgba(53, 55, 156, 0.185);
+    font-weight: 500;
+
+}
+.list li:nth-child(6) {
+    color: rgb(6, 255, 60);
+    background-color: rgb(8, 208, 226);
+    font-weight: 500;
+
+}
+
+.list li::before{
+    content: "";
+    width: 10px;
+    margin: 0px 3px 0px 0px;
+    height: 10px;
+    border-radius: 3px;
+    color: red;
+    display: inline-block;
+    background-color: violet;
+}
 .container{
-    padding: 10px;
-    max-width: 980px;
+    display: block;
+    padding: 0px 0px 10px 0px;
+    width: 980px;
     height: 1;
-    border: solid 3px rgb(49, 40, 40);
+    border: solid 3px rgb(67, 214, 61);
     margin: 0% auto;
+    /* position: relative; */
 }
 .options {
     font-size: 23px;
     color: blueviolet;
+}
+.options p:hover{
+    color: rgb(125, 133, 21);
 }
 .firstansver {
     font-size: 23px;
@@ -91,12 +152,22 @@ h2{
 .decoration{
     text-decoration:line-through;
 }
+
+.decoration_underline{
+    text-decoration:underline;
+}
 /* .decorationnone{
     text-decoration: none;
 } */
-
+.lastname{
+    display: flex;
+    justify-content: left;
+    /* text-align: right; */
+}
 .shadow{
+    
     text-shadow: 1px 3px 6px rgb(53, 51, 51);
+
 }
 
 .ident{
@@ -142,4 +213,86 @@ h2{
 
 .outline{
     outline: 1px solid rgb(248, 245, 70);
+}
+.inputtext{
+    margin: 2px;
+    border-radius: 4px;
+
+}
+.inputtext:focus{
+    box-shadow: 5px 5px 5px 1px rgb(70, 68, 68);
+
+}
+
+.btn1{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(66, 119, 73);
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(120, 141, 73, 0.301);
+    border: solid 1px rgb(137, 139, 9);
+}
+.btn1:focus{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(28, 39, 29);
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(120, 141, 73, 0.301);
+    border: solid 1px rgb(137, 139, 9);
+}
+.btn2{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(66, 119, 73);
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(120, 141, 73, 0.301);
+    border: solid 1px rgb(137, 139, 9);
+}
+.btn2:hover{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(219, 211, 51);
+    padding: 15px 35px;
+    border-radius: 5px;
+    background-color: rgba(120, 141, 73, 0.301);
+    border: solid 1px rgb(137, 139, 9);
+}
+.btn2:active{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(255, 242, 0);
+    padding: 15px 35px;
+    border-radius: 5px;
+    background-color: rgba(221, 226, 209, 0.301);
+    border: solid 1px rgb(137, 139, 9);
+}
+
+.arial::first-line{
+    color: rgb(74, 71, 255);
+}
+.arial:first-letter{
+    color: rgb(200, 255, 71);
+    font-size: 34px;
+
+}
+
+.colorchange p:hover{
+    color: rgba(51, 134, 18, 0.548);
+}
+.list{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #beb85d;
+    
+    position: fixed;
+    width: 100%;
+    /* top: 0px;
+    left: 0px; */
+    margin: 0% auto;
+    
+    
 }

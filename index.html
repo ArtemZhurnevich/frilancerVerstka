@@ -12,9 +12,8 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="shadow">Zhurnevich Artsem</h1>
             <nav>
-                <ul>
+                <ul class="list">
                     <li><a href="#Brieflyaboutyourself">Briefly about yourself</a></li>
                     <li><a href="#SkillsandProficiency">Skills and Proficiency</a></li>
                     <li><a href="#CodeExamples">Code Examples</a></li>
@@ -23,130 +22,128 @@
                     <li><a href="#Projects">Projects</a></li>
                 </ul>
             </nav>
-
-            <div class="opacity">Начало тренировочной фомы</div>
-
-            <form action="#" method="post" enctype="multipart/form-data">
-
-
-                <div>
-                    <input tabindex="1" placeholder="введите текст" type="text">
-                    <input tabindex="2" disabled placeholder="введите текст" type="text">
-                </div>
-
-                <!-- input с типом radio обязательно болжен иметь значения name = '' одинаковые -->
-                <div class="cut-block">
-                    <p>Выберите пол:</p>
-                    <div>
-                        <p><input tabindex="3" checked type="radio" name="inputs1">Мужской</p>
-                        <p><input tabindex="3" type="radio" name="inputs1">Женский</p>
-                    </div>
-                </div>
-
-
-                <div>
-                    <input tabindex="5" placeholder="введите пороль" type="password" name="inputs2">
-                </div>
-
-                <!-- input с типом checkbox обязательно болжен иметь значения name = '' разные -->
-                <div class="example-block">
-                    <p>Варианты ответа:</p>
-                    <div class="options">
-                        <p class="firstansver"> <input tabindex="6" checked type="checkbox" name="1"> первый вариант
-                            ответа </p>
-                        <p> <input tabindex="7" type="checkbox" name="2"> второй вариант ответа</p>
-                        <p> <input tabindex="8" type="checkbox" name="3"> третий вариант ответа</p>
-                        <p> <input tabindex="9" type="checkbox" name="4"> четвертый вариант ответа</p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <input tabindex="10" type="file" name="foto">
-                </div>
-
-                <div class="">
-                    <p class="">
-                        <textarea class="italic lineheight" tabindex="11" name="" id="" cols="80"
-                            rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum expedita excepturi cupiditate distinctio nostrum maxime explicabo sunt consectetur. Impedit eveniet alias suscipit consequuntur corrupti blanditiis quibusdam excepturi maiores dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus, aspernatur accusamus aperiam praesentium esse quis fugiat nam. Eaque sint dignissimos natus impedit maxime minima aliquid, quisquam veritatis nihil voluptates.</textarea>
-                    </p>
-                </div>
-
-                <div>
-                    <select class="" tabindex="12" name="color" id="">
-                        <option tabindex="13" value="1">первый</option>
-                        <option tabindex="14" value="2">второй</option>
-                        <option tabindex="15" value="3">третий</option>
-                        <option tabindex="16" value="4">четвертый</option>
-                        <option tabindex="17" value="5">пятый</option>
-                    </select>
-                </div>
-
-                <div>
-                    <button tabindex="18" type="submit">отправить</button>
-                    <button tabindex="19" type="reset">очистить</button>
-                </div>
-                <div class="opacity">Конец тренировочной фомы</div>
-            </form>
-
-            <h2 class="colorred" id="Brieflyaboutyourself">Briefly about yourself</h2>
-            <p class="arial textcenter ident leterspace">
-                <span class="outline">
-                    My name is Artem, I am 32 years old. I live in a small town in
-                    the Republic of Belarus.
-                    I got interested in web development half a year ago.
-                    I read a couple of books, looked at a couple of sources on YouTube and realized that I like
-                    it, it's
-                    interesting, it makes the brain work well, which in turn is positive!
-                    A month ago I learned about online courses at the RSS school.
-                    It turned out to be a very cool platform for learning web development! I think that I will
-                    succeed!)
-                </span>
-            </p>
-
-            <h2 class="colorred" id="SkillsandProficiency">Skills and Proficiency</h2>
-            <ul class="">
-                <li>VS Code, Adobe Photoshop</li>
-                <li>Git, GitHub</li>
-                <li>HTML5, CSS3</li>
-                <li>JavaScript Basics</li>
-            </ul>
-
-            <h2 class="colorred" id="CodeExamples">Code Examples</h2>
-            <code class="">console.log( "Я начал изучать JavaScript!" );</code>
-
-
-            <h2 class="colorred" id="Courses">Courses</h2>
-            <ul>
-                <li class="decoration">You - tube;</li>
-                <li>HTML and CSS HTML-academy;</li>
-                <li>learnjavascript.ru;</li>
-                <li>RS Schools Course «JavaScript/Front-end». </li>
-            </ul>
-
-
-            <h2 class="colorred" id="Languages">Languages</h2>
-            <ol class="">
-                <li>English - A1</li>
-                <li>Russian - С1</li>
-                <li>Belarussian - B1</li>
-            </ol>
-
-            <h2 class="colorred" id="Projects">Projects</h2>
-            <a href="https://artemzhurnevich.github.io/rsschool-cv/">Мое CV</a>
-
-            <div>
-                <a target="_blank" href="https://www.google.com/">Google</a>
+            <div class="lastname">
+                <h1 class="shadow">Zhurnevich Artsem</h1>
             </div>
-            <!-- <img src="img/ground.jpg" alt="упс"> -->
-
         </header>
 
-        <footer>
+        <div class="opacity">Начало тренировочной фомы</div>
+        <form action="#" method="post" enctype="multipart/form-data">
 
-        </footer>
+
+            <div>
+                <input class="inputtext" tabindex="1" placeholder="введите текст" type="text">
+                <input tabindex="2" disabled placeholder="введите текст" type="text">
+            </div>
+
+            <!-- input с типом radio обязательно болжен иметь значения name = '' одинаковые -->
+            <div class="cut-block">
+                <p>Выберите пол:</p>
+                <div class="colorchange">
+                    <p><input tabindex="3" checked type="radio" name="inputs1">Мужской</p>
+                    <p><input tabindex="3" type="radio" name="inputs1">Женский</p>
+                </div>
+            </div>
+
+
+            <div>
+                <input tabindex="5" placeholder="введите пороль" type="password" name="inputs2">
+            </div>
+
+            <!-- input с типом checkbox обязательно болжен иметь значения name = '' разные -->
+            <div class="example-block">
+                <p>Варианты ответа:</p>
+                <div class="options">
+                    <p class="firstansver"> <input tabindex="6" checked type="checkbox" name="1"> первый вариант
+                        ответа </p>
+                    <p> <input tabindex="7" type="checkbox" name="2"> второй вариант ответа</p>
+                    <p> <input tabindex="8" type="checkbox" name="3"> третий вариант ответа</p>
+                    <p> <input tabindex="9" type="checkbox" name="4"> четвертый вариант ответа</p>
+                </div>
+            </div>
+
+            <div class="">
+                <input tabindex="10" type="file" name="foto">
+            </div>
+
+            <div class="">
+                <p class="textarea">
+                    <textarea class=" italic lineheight" tabindex="11" name="" id="" cols="80"
+                        rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum expedita excepturi cupiditate distinctio nostrum maxime explicabo sunt consectetur. Impedit eveniet alias suscipit consequuntur corrupti blanditiis quibusdam excepturi maiores dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus, aspernatur accusamus aperiam praesentium esse quis fugiat nam. Eaque sint dignissimos natus impedit maxime minima aliquid, quisquam veritatis nihil voluptates.</textarea>
+                </p>
+            </div>
+
+            <div>
+                <select class="" tabindex="12" name="color" id="">
+                    <option tabindex="13" value="1">первый</option>
+                    <option tabindex="14" value="2">второй</option>
+                    <option tabindex="15" value="3">третий</option>
+                    <option tabindex="16" value="4">четвертый</option>
+                    <option tabindex="17" value="5">пятый</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn1" tabindex="18" type="submit">отправить</button>
+                <button class="btn2" tabindex="19" type="reset">очистить</button>
+            </div>
+            <div class="opacity">Конец тренировочной фомы</div>
+        </form>
+
+        <h2 class="colorred" id="Brieflyaboutyourself">Briefly about yourself</h2>
+        <p class="arial textcenter ident leterspace">
+            <span class="outline">
+                My name is Artem, I am 32 years old. I live in a small town in
+                the Republic of Belarus.
+                I got interested in web development half a year ago.
+                I read a couple of books, looked at a couple of sources on YouTube and realized that I like
+                it, it's
+                interesting, it makes the brain work well, which in turn is positive!
+                A month ago I learned about online courses at the RSS school.
+                It turned out to be a very cool platform for learning web development! I think that I will
+                succeed!)
+            </span>
+        </p>
+
+        <h2 class="colorred" id="SkillsandProficiency">Skills and Proficiency</h2>
+        <ul class="">
+            <li>VS Code, Adobe Photoshop</li>
+            <li>Git, GitHub</li>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript Basics</li>
+        </ul>
+
+        <h2 class="colorred" id="CodeExamples">Code Examples</h2>
+        <code class="">console.log( "Я начал изучать JavaScript!" );</code>
+
+
+        <h2 class="colorred" id="Courses">Courses</h2>
+        <ul>
+            <li class="decoration">You - tube;</li>
+            <li>HTML and CSS HTML-academy;</li>
+            <li>learnjavascript.ru;</li>
+            <li>RS Schools Course «JavaScript/Front-end». </li>
+        </ul>
+
+
+        <h2 class="colorred" id="Languages">Languages</h2>
+        <ol class="">
+            <li>English - A1</li>
+            <li>Russian - С1</li>
+            <li>Belarussian - B1</li>
+        </ol>
+
+        <h2 class="colorred" id="Projects">Projects</h2>
+        <a href="https://artemzhurnevich.github.io/rsschool-cv/">Мое CV</a>
+
+        <div>
+            <a target="_blank" href="https://www.google.com/">Google</a>
+        </div>
+        <!-- <img src="img/ground.jpg" alt="упс"> -->
 
     </div>
 
+    <footer></footer>
 
 </body>
 
